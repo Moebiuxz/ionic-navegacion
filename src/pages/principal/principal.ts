@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import {Pagina2Page} from "../pagina2/pagina2";
 
 /**
  * Generated class for the PrincipalPage page.
@@ -14,11 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PrincipalPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PrincipalPage');
-  }
-
+    navegarPagina() {
+        this.navCtrl.push(Pagina2Page);
+    }
 }
