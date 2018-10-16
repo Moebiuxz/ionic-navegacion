@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController, NavParams} from "ionic-angular";
+import {NavParams} from "ionic-angular";
 
 @Component({
     selector: 'page-pagina3',
@@ -7,12 +7,12 @@ import {NavController, NavParams} from "ionic-angular";
 })
 
 export class Pagina3Page {
+    mutante:any = {};
 
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(public navParams: NavParams) {
+        console.log(navParams);
+        this.mutante = this.navParams.get('mutante');
     }
 
-    ionViewDidLoad() {
-        console.log('ionViewDidLoad Pagina2Page');
-    }
 
 }
