@@ -14,9 +14,10 @@ import {Pagina2Page} from "../pagina2/pagina2";
   templateUrl: 'principal.html',
 })
 export class PrincipalPage {
+    pagina2: any = Pagina2Page;
 
-  constructor(public navCtrl: NavController) {
-  }
+    constructor(public navCtrl: NavController) {
+    }
 
     navegarPagina() {
         this.navCtrl.push(Pagina2Page);
