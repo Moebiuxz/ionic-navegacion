@@ -7,6 +7,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+/*Imports páginas*/
+import { PrincipalPage,
+            AjustesPage,
+            Ajustes2Page,
+            ModalPage,
+            Pagina2Page,
+            Pagina3Page,
+            TabsPage}
+            from "../pages/index.paginas";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,8 +28,15 @@ import { HomePage } from '../pages/home/home';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+      MyApp,
+      HomePage,
+      PrincipalPage,
+      AjustesPage,
+      Ajustes2Page,
+      ModalPage,
+      Pagina2Page,
+      Pagina3Page,
+      TabsPage
   ],
   providers: [
     StatusBar,
